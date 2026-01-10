@@ -1,0 +1,64 @@
+{
+  "modules": [
+    {
+      "id": "mod-visibility",
+      "name": "AI Visibility",
+      "description": "Measures how prominently your brand appears in AI-generated responses across major LLMs",
+      "category": "visibility",
+      "icon": "Eye",
+      "score": 78,
+      "maxScore": 100,
+      "status": "warning"
+    },
+    {
+      "id": "mod-trust",
+      "name": "Trust & Authority",
+      "description": "Analyzes citation patterns, source authority, and factual accuracy in AI outputs",
+      "category": "trust",
+      "icon": "Shield",
+      "score": 92,
+      "maxScore": 100,
+      "status": "healthy"
+    },
+    {
+      "id": "mod-content",
+      "name": "Content Quality",
+      "description": "Evaluates content structure, semantic richness, and AI-readability",
+      "category": "content",
+      "icon": "FileText",
+      "score": 65,
+      "maxScore": 100,
+      "status": "warning"
+    },
+    {
+      "id": "mod-technical",
+      "name": "Technical SEO",
+      "description": "Assesses crawlability, structured data, and technical optimization",
+      "category": "technical",
+      "icon": "Settings",
+      "score": 88,
+      "maxScore": 100,
+      "status": "healthy"
+    },
+    {
+      "id": "mod-competitive",
+      "name": "Competitive Intelligence",
+      "description": "Tracks competitor visibility and share of voice in AI responses",
+      "category": "competitive",
+      "icon": "TrendingUp",
+      "score": 45,
+      "maxScore": 100,
+      "status": "critical"
+    },
+    {
+      "id": "mod-keywords",
+      "name": "Keyword Coverage",
+      "description": "Maps keyword relevance and coverage across AI platforms",
+      "category": "visibility",
+      "icon": "Search",
+      "score": 72,
+      "maxScore": 100,
+      "status": "warning"
+    }
+  ]
+}

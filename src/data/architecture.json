@@ -1,0 +1,118 @@
+{
+  "architecture": {
+    "blocks": [
+      {
+        "id": "input-assembler",
+        "name": "Input Assembler",
+        "type": "input",
+        "description": "Collects and normalizes data from multiple sources",
+        "subComponents": [
+          "URL Crawler",
+          "API Integrations",
+          "Manual Uploads",
+          "Competitor URLs"
+        ],
+        "connections": ["context-pack"]
+      },
+      {
+        "id": "context-pack",
+        "name": "Context Pack",
+        "type": "context",
+        "description": "Builds semantic context and brand intelligence graph",
+        "subComponents": [
+          "Brand Entity Graph",
+          "Industry Taxonomy",
+          "Competitor Map",
+          "Query Clusters"
+        ],
+        "connections": ["mod-visibility", "mod-trust", "mod-content", "mod-technical", "mod-competitive"]
+      },
+      {
+        "id": "mod-visibility",
+        "name": "AI Visibility Module",
+        "type": "module",
+        "description": "Analyzes brand presence across AI platforms",
+        "subComponents": [
+          "LLM Query Sampler",
+          "Mention Tracker",
+          "Position Analyzer"
+        ],
+        "connections": ["output-surfaces"]
+      },
+      {
+        "id": "mod-trust",
+        "name": "Trust & Authority Module",
+        "type": "module",
+        "description": "Evaluates citation quality and factual accuracy",
+        "subComponents": [
+          "Citation Analyzer",
+          "Fact Checker",
+          "Source Validator"
+        ],
+        "connections": ["output-surfaces"]
+      },
+      {
+        "id": "mod-content",
+        "name": "Content Quality Module",
+        "type": "module",
+        "description": "Assesses content for AI readability",
+        "subComponents": [
+          "Semantic Parser",
+          "Structure Analyzer",
+          "Readability Scorer"
+        ],
+        "connections": ["output-surfaces"]
+      },
+      {
+        "id": "mod-technical",
+        "name": "Technical SEO Module",
+        "type": "module",
+        "description": "Audits technical optimization",
+        "subComponents": [
+          "Crawl Analyzer",
+          "Schema Validator",
+          "Performance Monitor"
+        ],
+        "connections": ["output-surfaces"]
+      },
+      {
+        "id": "mod-competitive",
+        "name": "Competitive Intel Module",
+        "type": "module",
+        "description": "Tracks competitive landscape",
+        "subComponents": [
+          "SOV Calculator",
+          "Gap Analyzer",
+          "Trend Detector"
+        ],
+        "connections": ["output-surfaces"]
+      },
+      {
+        "id": "output-surfaces",
+        "name": "Output Surfaces",
+        "type": "output",
+        "description": "Delivers insights across multiple interfaces",
+        "subComponents": [
+          "Dashboard UI",
+          "API Endpoints",
+          "Reports Generator",
+          "Alerts System"
+        ],
+        "connections": []
+      }
+    ],
+    "dataFlow": [
+      { "from": "input-assembler", "to": "context-pack", "label": "Raw Data" },
+      { "from": "context-pack", "to": "mod-visibility", "label": "Context" },
+      { "from": "context-pack", "to": "mod-trust", "label": "Context" },
+      { "from": "context-pack", "to": "mod-content", "label": "Context" },
+      { "from": "context-pack", "to": "mod-technical", "label": "Context" },
+      { "from": "context-pack", "to": "mod-competitive", "label": "Context" },
+      { "from": "mod-visibility", "to": "output-surfaces", "label": "Scores" },
+      { "from": "mod-trust", "to": "output-surfaces", "label": "Scores" },
+      { "from": "mod-content", "to": "output-surfaces", "label": "Scores" },
+      { "from": "mod-technical", "to": "output-surfaces", "label": "Scores" },
+      { "from": "mod-competitive", "to": "output-surfaces", "label": "Scores" }
+    ]
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "results": {
+    "mod-visibility": {
+      "id": "result-001",
+      "brandId": "brand-001",
+      "moduleId": "mod-visibility",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 78,
+      "previousScore": 72,
+      "insights": [
+        {
+          "id": "ins-001",
+          "type": "positive",
+          "title": "Brand mentioned in 68% of relevant queries",
+          "description": "Your brand appears consistently in AI responses for industry-relevant queries",
+          "metric": "Mention Rate",
+          "value": "68%",
+          "trend": "up"
+        },
+        {
+          "id": "ins-002",
+          "type": "neutral",
+          "title": "Average position: 2.3 in AI responses",
+          "description": "When mentioned, your brand typically appears as the 2nd or 3rd option",
+          "metric": "Avg Position",
+          "value": 2.3,
+          "trend": "stable"
+        },
+        {
+          "id": "ins-003",
+          "type": "negative",
+          "title": "Missing from 12 high-value query clusters",
+          "description": "Critical industry queries where competitors appear but you don't",
+          "metric": "Missing Clusters",
+          "value": 12,
+          "trend": "down"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-001",
+          "severity": "high",
+          "title": "Low visibility in enterprise segment queries",
+          "description": "AI models rarely mention your brand for enterprise-focused questions",
+          "affectedArea": "Enterprise Segment",
+          "detectedAt": "2026-01-05T10:00:00Z",
+          "status": "open"
+        },
+        {
+          "id": "iss-002",
+          "severity": "medium",
+          "title": "Inconsistent brand name usage",
+          "description": "AI responses use 3 different variations of your brand name",
+          "affectedArea": "Brand Consistency",
+          "detectedAt": "2026-01-03T14:00:00Z",
+          "status": "in-progress"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-001",
+          "priority": "high",
+          "title": "Create enterprise-focused content hub",
+          "description": "Develop comprehensive content addressing enterprise use cases to improve visibility in this segment",
+          "impact": "Expected +15% visibility in enterprise queries",
+          "effort": "high",
+          "category": "Content Strategy"
+        },
+        {
+          "id": "rec-002",
+          "priority": "medium",
+          "title": "Standardize brand mentions across web properties",
+          "description": "Ensure consistent brand naming in all owned content to improve AI recognition",
+          "impact": "Better brand attribution in AI responses",
+          "effort": "low",
+          "category": "Brand Consistency"
+        }
+      ]
+    },
+    "mod-trust": {
+      "id": "result-002",
+      "brandId": "brand-001",
+      "moduleId": "mod-trust",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 92,
+      "previousScore": 89,
+      "insights": [
+        {
+          "id": "ins-004",
+          "type": "positive",
+          "title": "Cited as authoritative source 156 times",
+          "description": "Your content is frequently referenced as a trusted source by AI models",
+          "metric": "Citation Count",
+          "value": 156,
+          "trend": "up"
+        },
+        {
+          "id": "ins-005",
+          "type": "positive",
+          "title": "98% factual accuracy in brand-related AI responses",
+          "description": "AI models accurately represent your brand information",
+          "metric": "Accuracy Rate",
+          "value": "98%",
+          "trend": "stable"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-003",
+          "severity": "low",
+          "title": "Outdated pricing information in some AI responses",
+          "description": "2 AI models reference pricing from 2024",
+          "affectedArea": "Product Information",
+          "detectedAt": "2026-01-06T09:00:00Z",
+          "status": "open"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-003",
+          "priority": "low",
+          "title": "Update structured data for pricing",
+          "description": "Add updated pricing schema markup to improve AI accuracy",
+          "impact": "Correct pricing in AI responses",
+          "effort": "low",
+          "category": "Technical SEO"
+        }
+      ]
+    },
+    "mod-content": {
+      "id": "result-003",
+      "brandId": "brand-001",
+      "moduleId": "mod-content",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 65,
+      "previousScore": 68,
+      "insights": [
+        {
+          "id": "ins-006",
+          "type": "neutral",
+          "title": "Content readability score: 72/100",
+          "description": "Your content is moderately optimized for AI parsing",
+          "metric": "Readability",
+          "value": 72,
+          "trend": "stable"
+        },
+        {
+          "id": "ins-007",
+          "type": "negative",
+          "title": "45% of pages lack semantic structure",
+          "description": "Many pages missing proper heading hierarchy and structured content",
+          "metric": "Structure Coverage",
+          "value": "55%",
+          "trend": "down"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-004",
+          "severity": "high",
+          "title": "Thin content on 23 key landing pages",
+          "description": "Critical pages have insufficient depth for AI understanding",
+          "affectedArea": "Landing Pages",
+          "detectedAt": "2026-01-04T11:00:00Z",
+          "status": "open"
+        },
+        {
+          "id": "iss-005",
+          "severity": "medium",
+          "title": "Missing FAQ structured data",
+          "description": "FAQ sections not marked up for AI consumption",
+          "affectedArea": "Structured Data",
+          "detectedAt": "2026-01-02T15:00:00Z",
+          "status": "open"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-004",
+          "priority": "high",
+          "title": "Expand thin content pages",
+          "description": "Add comprehensive content to underperforming landing pages",
+          "impact": "+20% content quality score",
+          "effort": "high",
+          "category": "Content Strategy"
+        },
+        {
+          "id": "rec-005",
+          "priority": "medium",
+          "title": "Implement FAQ schema markup",
+          "description": "Add structured data to all FAQ sections",
+          "impact": "Improved AI response accuracy",
+          "effort": "medium",
+          "category": "Technical SEO"
+        }
+      ]
+    },
+    "mod-technical": {
+      "id": "result-004",
+      "brandId": "brand-001",
+      "moduleId": "mod-technical",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 88,
+      "previousScore": 85,
+      "insights": [
+        {
+          "id": "ins-008",
+          "type": "positive",
+          "title": "100% crawlability for AI bots",
+          "description": "All important pages accessible to AI crawlers",
+          "metric": "Crawlability",
+          "value": "100%",
+          "trend": "stable"
+        },
+        {
+          "id": "ins-009",
+          "type": "positive",
+          "title": "Schema markup on 89% of pages",
+          "description": "Strong structured data implementation",
+          "metric": "Schema Coverage",
+          "value": "89%",
+          "trend": "up"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-006",
+          "severity": "low",
+          "title": "3 pages with slow response times",
+          "description": "Some pages take >3s to respond, affecting AI crawling efficiency",
+          "affectedArea": "Performance",
+          "detectedAt": "2026-01-07T08:00:00Z",
+          "status": "in-progress"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-006",
+          "priority": "low",
+          "title": "Optimize slow-loading pages",
+          "description": "Improve server response time for flagged pages",
+          "impact": "Better crawl efficiency",
+          "effort": "medium",
+          "category": "Performance"
+        }
+      ]
+    },
+    "mod-competitive": {
+      "id": "result-005",
+      "brandId": "brand-001",
+      "moduleId": "mod-competitive",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 45,
+      "previousScore": 52,
+      "insights": [
+        {
+          "id": "ins-010",
+          "type": "negative",
+          "title": "Share of voice: 18% (down from 24%)",
+          "description": "Competitors gaining ground in AI-generated recommendations",
+          "metric": "Share of Voice",
+          "value": "18%",
+          "trend": "down"
+        },
+        {
+          "id": "ins-011",
+          "type": "negative",
+          "title": "3 competitors outrank you in 67% of queries",
+          "description": "Significant competitive pressure in core keyword segments",
+          "metric": "Competitive Gap",
+          "value": "67%",
+          "trend": "down"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-007",
+          "severity": "critical",
+          "title": "Major competitor launched AI-optimized content hub",
+          "description": "CompetitorX released 50+ AI-optimized articles last month",
+          "affectedArea": "Competitive Position",
+          "detectedAt": "2026-01-01T10:00:00Z",
+          "status": "open"
+        },
+        {
+          "id": "iss-008",
+          "severity": "high",
+          "title": "Losing mentions in comparison queries",
+          "description": "Your brand excluded from AI 'best of' and comparison responses",
+          "affectedArea": "Comparison Visibility",
+          "detectedAt": "2026-01-04T14:00:00Z",
+          "status": "open"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-007",
+          "priority": "high",
+          "title": "Launch competitive content initiative",
+          "description": "Create comparison content and feature-focused pages",
+          "impact": "Recover share of voice",
+          "effort": "high",
+          "category": "Content Strategy"
+        },
+        {
+          "id": "rec-008",
+          "priority": "high",
+          "title": "Build authoritative backlink profile",
+          "description": "Increase citations from high-authority sources",
+          "impact": "+15% trust signals",
+          "effort": "high",
+          "category": "Off-Page SEO"
+        }
+      ]
+    },
+    "mod-keywords": {
+      "id": "result-006",
+      "brandId": "brand-001",
+      "moduleId": "mod-keywords",
+      "timestamp": "2026-01-08T14:30:00Z",
+      "score": 72,
+      "previousScore": 70,
+      "insights": [
+        {
+          "id": "ins-012",
+          "type": "positive",
+          "title": "Ranking for 234 AI-relevant keywords",
+          "description": "Good coverage of primary keyword targets",
+          "metric": "Keyword Count",
+          "value": 234,
+          "trend": "up"
+        },
+        {
+          "id": "ins-013",
+          "type": "neutral",
+          "title": "Keyword difficulty average: Medium",
+          "description": "Targeting mix of competitive and attainable keywords",
+          "metric": "Avg Difficulty",
+          "value": "Medium",
+          "trend": "stable"
+        }
+      ],
+      "issues": [
+        {
+          "id": "iss-009",
+          "severity": "medium",
+          "title": "Missing long-tail keyword coverage",
+          "description": "Significant gap in conversational, long-tail queries",
+          "affectedArea": "Keyword Strategy",
+          "detectedAt": "2026-01-05T12:00:00Z",
+          "status": "open"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "rec-009",
+          "priority": "medium",
+          "title": "Expand long-tail keyword targeting",
+          "description": "Create content targeting conversational AI queries",
+          "impact": "+30% keyword coverage",
+          "effort": "medium",
+          "category": "Keyword Strategy"
+        }
+      ]
+    }
+  }
+}

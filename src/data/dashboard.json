@@ -1,0 +1,58 @@
+{
+  "dashboard": {
+    "brandId": "brand-001",
+    "lastUpdated": "2026-01-08T14:30:00Z",
+    "metrics": [
+      {
+        "id": "metric-visibility",
+        "label": "AI Visibility Score",
+        "value": 78,
+        "previousValue": 72,
+        "unit": "/100",
+        "trend": "up",
+        "changePercent": 8.3
+      },
+      {
+        "id": "metric-trust",
+        "label": "Trust Score",
+        "value": 92,
+        "previousValue": 89,
+        "unit": "/100",
+        "trend": "up",
+        "changePercent": 3.4
+      },
+      {
+        "id": "metric-keywords",
+        "label": "Keyword Coverage",
+        "value": 234,
+        "previousValue": 218,
+        "unit": "keywords",
+        "trend": "up",
+        "changePercent": 7.3
+      },
+      {
+        "id": "metric-audit",
+        "label": "Last Audit",
+        "value": "2 hours ago",
+        "trend": "stable"
+      },
+      {
+        "id": "metric-share",
+        "label": "Share of Voice",
+        "value": 18,
+        "previousValue": 24,
+        "unit": "%",
+        "trend": "down",
+        "changePercent": -25
+      },
+      {
+        "id": "metric-issues",
+        "label": "Open Issues",
+        "value": 9,
+        "previousValue": 7,
+        "trend": "down",
+        "changePercent": 28.6
+      }
+    ]
+  }
+}

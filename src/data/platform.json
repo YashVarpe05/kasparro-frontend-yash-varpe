@@ -1,0 +1,105 @@
+{
+  "platform": {
+    "pipeline": [
+      {
+        "id": "stage-input",
+        "name": "Input",
+        "description": "Data collection from brand properties, competitors, and market signals",
+        "inputs": ["Website URLs", "Competitor Domains", "Target Keywords", "Brand Assets"],
+        "outputs": ["Normalized Data Package"],
+        "icon": "Download"
+      },
+      {
+        "id": "stage-context",
+        "name": "Context Building",
+        "description": "Semantic analysis and knowledge graph construction",
+        "inputs": ["Normalized Data Package"],
+        "outputs": ["Brand Context Graph", "Industry Taxonomy", "Query Clusters"],
+        "icon": "Network"
+      },
+      {
+        "id": "stage-analysis",
+        "name": "Module Analysis",
+        "description": "Parallel execution of specialized audit modules",
+        "inputs": ["Brand Context Graph"],
+        "outputs": ["Module Scores", "Insights", "Issues", "Recommendations"],
+        "icon": "Cpu"
+      },
+      {
+        "id": "stage-output",
+        "name": "Output",
+        "description": "Actionable intelligence delivery across surfaces",
+        "inputs": ["Module Scores", "Insights", "Recommendations"],
+        "outputs": ["Dashboard", "Reports", "API", "Alerts"],
+        "icon": "LayoutDashboard"
+      }
+    ],
+    "modules": [
+      {
+        "id": "mod-visibility",
+        "name": "AI Visibility",
+        "shortDescription": "Track brand presence in AI responses",
+        "fullDescription": "Monitors how your brand appears in responses from ChatGPT, Claude, Gemini, and other major AI platforms. Tracks mention frequency, positioning, and sentiment.",
+        "capabilities": [
+          "Cross-platform LLM monitoring",
+          "Query cluster analysis",
+          "Position tracking over time",
+          "Sentiment analysis in mentions"
+        ],
+        "icon": "Eye"
+      },
+      {
+        "id": "mod-trust",
+        "name": "Trust & Authority",
+        "shortDescription": "Measure citation quality and accuracy",
+        "fullDescription": "Analyzes how AI models cite your brand, validates factual accuracy, and measures authority signals across the AI ecosystem.",
+        "capabilities": [
+          "Citation pattern analysis",
+          "Factual accuracy validation",
+          "Source authority scoring",
+          "Misinformation detection"
+        ],
+        "icon": "Shield"
+      },
+      {
+        "id": "mod-content",
+        "name": "Content Quality",
+        "shortDescription": "Optimize content for AI understanding",
+        "fullDescription": "Evaluates your content's structure, semantic richness, and AI-readability to improve how AI models understand and represent your brand.",
+        "capabilities": [
+          "Semantic structure analysis",
+          "AI readability scoring",
+          "Content gap identification",
+          "Schema markup validation"
+        ],
+        "icon": "FileText"
+      },
+      {
+        "id": "mod-technical",
+        "name": "Technical SEO",
+        "shortDescription": "Ensure optimal AI crawlability",
+        "fullDescription": "Audits technical aspects that affect how AI crawlers access and understand your content, including structured data and performance.",
+        "capabilities": [
+          "AI bot crawlability audit",
+          "Structured data validation",
+          "Performance monitoring",
+          "Sitemap analysis"
+        ],
+        "icon": "Settings"
+      },
+      {
+        "id": "mod-competitive",
+        "name": "Competitive Intelligence",
+        "shortDescription": "Track your position vs competitors",
+        "fullDescription": "Monitors competitor visibility, share of voice, and positioning in AI responses to identify opportunities and threats.",
+        "capabilities": [
+          "Share of voice tracking",
+          "Competitor mention analysis",
+          "Gap opportunity detection",
+          "Trend forecasting"
+        ],
+        "icon": "TrendingUp"
+      }
+    ]
+  }
+}
