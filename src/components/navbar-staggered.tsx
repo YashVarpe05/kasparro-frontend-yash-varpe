@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 
 const StaggeredMenu = dynamic(
 	() => import("@/components/StaggeredMenu").then((mod) => mod.StaggeredMenu),
-	{ ssr: false }
+	{ ssr: false },
 );
 
 const menuItems = [
@@ -44,7 +44,7 @@ export function NavbarStaggered() {
 	const panelBg = isDark ? "#0a0a0a" : "#ffffff";
 	const panelText = isDark ? "#ffffff" : "#000000";
 	const layerColors = isDark ? ["#1e1b4b", "#4c1d95"] : ["#f5f3ff", "#ddd6fe"];
-	const menuBtnColor = "#ffffff";
+	const menuBtnColor = isDark ? "#ffffff" : "#000000";
 	const openMenuBtnColor = isDark ? "#ffffff" : "#000000";
 
 	return (
