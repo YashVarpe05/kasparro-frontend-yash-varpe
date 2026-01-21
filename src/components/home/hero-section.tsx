@@ -10,7 +10,7 @@ const LaserFlow = dynamic(() => import("@/components/LaserFlow"), { ssr: false }
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-background dark:bg-black">
       {/* LaserFlow Background */}
       <div className="absolute inset-0 z-0">
         <LaserFlow
@@ -27,7 +27,7 @@ export function HeroSection() {
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 z-1 bg-linear-to-b from-black/50 via-black/20 to-black" />
+      <div className="absolute inset-0 z-1 bg-linear-to-b from-background/50 via-background/20 to-background dark:from-black/50 dark:via-black/20 dark:to-black" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 w-full">
@@ -41,12 +41,12 @@ export function HeroSection() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] text-white mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05] text-foreground mb-8">
             Own AI Search
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg sm:text-xl text-gray-300 max-w-xl leading-relaxed mb-12">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-xl leading-relaxed mb-12">
             Monitor how AI platforms represent your brand and get actionable
             insights to dominate AI-generated answers.
           </p>
@@ -77,10 +77,10 @@ export function HeroSection() {
           <div className="grid grid-cols-4 gap-6 w-full max-w-2xl">
             {stats.map((stat, idx) => (
               <div key={idx} className="text-center">
-                <p className="text-3xl sm:text-4xl font-bold text-white">
+                <p className="text-3xl sm:text-4xl font-bold text-foreground">
                   {stat.value}
                 </p>
-                <p className="text-xs text-gray-500 mt-1">{stat.label}</p>
+                <p className="text-xs text-muted-foreground mt-1">{stat.label}</p>
               </div>
             ))}
           </div>

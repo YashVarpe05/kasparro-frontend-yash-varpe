@@ -5,11 +5,11 @@ import { features } from "@/data/home";
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 bg-black">
+    <section className="py-24 bg-background dark:bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-white">Why Kasparro?</h2>
-          <p className="text-gray-400 max-w-lg mx-auto">
+          <h2 className="text-3xl font-bold mb-4 text-foreground">Why Kasparro?</h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">
             AI is rewriting how customers discover brands. Are you visible?
           </p>
         </div>
@@ -20,8 +20,8 @@ export function FeaturesSection() {
                 <div className="h-14 w-14 rounded-2xl bg-violet-500/20 flex items-center justify-center">
                   <feature.icon className="h-7 w-7 text-violet-400" />
                 </div>
-                <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
-                <ul className="text-gray-400 space-y-2 text-sm">
+                <h3 className="text-xl font-semibold text-foreground">{feature.title}</h3>
+                <ul className="text-muted-foreground space-y-2 text-sm">
                   {feature.bullets.map((bullet, bidx) => (
                     <li key={bidx} className="flex items-start gap-2">
                       <span className="text-violet-400 mt-1">•</span>
