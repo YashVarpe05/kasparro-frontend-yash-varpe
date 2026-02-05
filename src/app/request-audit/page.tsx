@@ -9,10 +9,10 @@ export default function RequestAudit() {
 				<span className="inline-block py-1 px-3 mb-8 rounded-full border border-white/10 bg-white/5 text-xs font-mono text-brand-muted tracking-wider uppercase">
 					Start Here
 				</span>
-				<h1 className="text-4xl md:text-6xl font-medium tracking-tighter leading-[1.1] mb-8 text-white">
+				<h1 className="text-4xl md:text-6xl font-medium tracking-tighter leading-[1.1] mb-8 text-white animate-enter">
 					AI Trust Readiness Audit
 				</h1>
-				<p className="text-xl max-w-2xl text-brand-muted">
+				<p className="text-xl max-w-2xl text-brand-muted animate-enter delay-100">
 					Find out exactly where your brand is leaking revenue in the AI
 					ecosystem.
 				</p>

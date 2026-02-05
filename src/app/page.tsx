@@ -11,12 +11,15 @@ export default function Home() {
 					System C: Deterministic Content + Surface
 				</span>
 
-				<h1 className="text-4xl md:text-6xl font-medium tracking-tighter leading-[1.1] mb-8 text-white">
+				<h1 className="text-4xl md:text-6xl font-medium tracking-tighter leading-[1.1] mb-8 text-white animate-enter">
 					How Kasparro turns brand truth into{" "}
 					<span className="text-brand-muted">AI-recommended answers.</span>
 				</h1>
 
-				<p className="text-xl md:text-2xl text-brand-muted font-light leading-relaxed max-w-2xl">
+				<p
+					className="text-xl md:text-2xl text-brand-muted font-light leading-relaxed max-w-2xl animate-enter delay-100"
+					style={{ opacity: 0, animationFillMode: "forwards" }}
+				>
 					Revenue leaks when AI can’t safely explain your product.
 					<span className="text-white/90 block mt-2">
 						AI hesitates when your knowledge surface is unreliable.
@@ -24,7 +27,7 @@ export default function Home() {
 				</p>
 			</Section>
 
-			<Section className="space-y-12">
+			<Section className="space-y-12 reveal">
 				<div className="border-l border-white/10 pl-6 mt-6">
 					<h2 className="text-2xl font-medium text-white mb-4">
 						Your customers are no longer browsing. <br />
@@ -37,15 +40,15 @@ export default function Home() {
 					</p>
 
 					<ul className="space-y-3 font-mono text-sm text-brand-muted">
-						<li className="flex items-center gap-3 stagger-item">
+						<li className="flex items-center gap-3 stagger-item delay-100">
 							<span className="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
 							Recommendations don't happen
 						</li>
-						<li className="flex items-center gap-3 stagger-item">
+						<li className="flex items-center gap-3 stagger-item delay-200">
 							<span className="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
 							Comparisons tilt against you
 						</li>
-						<li className="flex items-center gap-3 stagger-item">
+						<li className="flex items-center gap-3 stagger-item delay-300">
 							<span className="w-1.5 h-1.5 bg-red-500 rounded-full"></span>
 							Intent dies before it reaches your site
 						</li>
@@ -53,7 +56,7 @@ export default function Home() {
 				</div>
 			</Section>
 
-			<Section>
+			<Section className="reveal">
 				<div className="mb-12">
 					<p className="text-lg text-brand-muted max-w-2xl">
 						Most brands respond by publishing more. Blogs. FAQs. Landing pages.
@@ -71,7 +74,7 @@ export default function Home() {
 						</h3>
 
 						<ul className="space-y-4 text-brand-muted opacity-60">
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-100">
 								<svg
 									className="w-5 h-5 flex-shrink-0"
 									fill="none"
@@ -105,7 +108,7 @@ export default function Home() {
 								</svg>
 								Landing Pages
 							</li>
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-200">
 								<svg
 									className="w-5 h-5 flex-shrink-0"
 									fill="none"
@@ -122,7 +125,7 @@ export default function Home() {
 								</svg>
 								FAQs
 							</li>
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-300">
 								<svg
 									className="w-5 h-5 flex-shrink-0"
 									fill="none"
@@ -148,25 +151,25 @@ export default function Home() {
 						</h3>
 
 						<ul className="space-y-4 text-white">
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-100">
 								<span className="text-red-400 font-mono text-lg">×</span>{" "}
 								Fragmented explanations
 							</li>
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-200">
 								<span className="text-red-400 font-mono text-lg">×</span>{" "}
 								Inconsistent claims
 							</li>
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-300">
 								<span className="text-red-400 font-mono text-lg">×</span>{" "}
 								Missing answers
 							</li>
-							<li className="flex items-center gap-4 stagger-item">
+							<li className="flex items-center gap-4 stagger-item delay-400">
 								<span className="text-red-400 font-mono text-lg">×</span> Unsafe
 								language
 							</li>
 						</ul>
 
-						<div className="mt-8 text-sm text-brand-muted border-l-2 border-white/20 pl-4 stagger-item delay-[500ms]">
+						<div className="mt-8 text-sm text-brand-muted border-l-2 border-white/20 pl-4 stagger-item delay-500">
 							So it fills the gaps — or avoids you entirely. <br />
 							<strong className="text-white">Deterministic Content</strong> is
 							how Kasparro removes the guesswork.
@@ -175,7 +178,7 @@ export default function Home() {
 				</div>
 			</Section>
 
-			<Section>
+			<Section className="reveal">
 				<h2 className="text-3xl font-medium text-white mb-8">
 					Stop being interpreted. Start being understood.
 				</h2>
@@ -197,7 +200,7 @@ export default function Home() {
 				</SiteCard>
 			</Section>
 
-			<Section className="max-w-5xl">
+			<Section className="max-w-5xl reveal">
 				<div className="text-center mb-16">
 					<h2 className="text-3xl md:text-4xl text-white font-medium mb-4">
 						From truth to visibility: The Content Surface
@@ -327,7 +330,7 @@ export default function Home() {
 				</div>
 			</Section>
 
-			<Section>
+			<Section className="reveal">
 				<h2 className="text-xs font-mono text-brand-muted uppercase tracking-wider mb-8">
 					What Kasparro Prevents By Design
 				</h2>

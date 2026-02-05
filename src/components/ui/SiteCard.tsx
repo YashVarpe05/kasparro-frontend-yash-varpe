@@ -23,7 +23,7 @@ export function SiteCard({
 	};
 
 	return (
-		<div className={cn(variants[variant], className)} {...props}>
+		<div className={cn(variants[variant], "hover-lift", className)} {...props}>
 			{children}
 		</div>
 	);

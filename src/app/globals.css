@@ -34,6 +34,16 @@
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
+
+  /* Motion Tokens - Professional B2B System */
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --duration-fast: 200ms;
+  --duration-medium: 400ms;
+  --duration-slow: 600ms;
 }
 
 :root {
@@ -107,7 +117,8 @@
     background-size: 40px 40px;
     mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
     -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-    opacity: 0.07;
+    opacity: 0.04;
+    /* Toned down from 0.07 */
     pointer-events: none;
   }
 
@@ -121,17 +132,22 @@
     inset: -1px;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
+    background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.05) 50%, transparent 60%);
+    /* Toned down opacity */
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
   }
 
+  /* Professional B2B Motion System */
+
+  /* Scroll Reveal Helper */
   .reveal {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(10px);
+    /* 10px lift is subtle and professional */
+    transition: opacity 0.8s var(--ease-out-quart), transform 0.8s var(--ease-out-quart);
     will-change: opacity, transform;
   }
 
@@ -140,45 +156,85 @@
     transform: translateY(0);
   }
 
-  .stagger-item {
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  /* Hover Lift */
+  .hover-lift {
+    transition: transform 0.3s var(--ease-out-quad), box-shadow 0.3s var(--ease-out-quad);
+    will-change: transform;
   }
 
-  .reveal.active .stagger-item {
-    opacity: 1;
-    transform: translateY(0);
+  .hover-lift:hover {
+    transform: translateY(-2px);
   }
 
-  .reveal.active .stagger-item:nth-child(1) {
+  /* Standard Keyframe Animations */
+  .animate-enter {
+    animation: enter var(--duration-medium) var(--ease-out-quart) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn var(--duration-medium) var(--ease-out-quad) forwards;
+  }
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Stagger Delays */
+  .delay-100 {
+    animation-delay: 100ms;
     transition-delay: 100ms;
   }
 
-  .reveal.active .stagger-item:nth-child(2) {
+  .delay-200 {
+    animation-delay: 200ms;
     transition-delay: 200ms;
   }
 
-  .reveal.active .stagger-item:nth-child(3) {
+  .delay-300 {
+    animation-delay: 300ms;
     transition-delay: 300ms;
   }
 
-  .reveal.active .stagger-item:nth-child(4) {
+  .delay-400 {
+    animation-delay: 400ms;
     transition-delay: 400ms;
   }
 
-  .reveal.active .stagger-item:nth-child(5) {
+  .delay-500 {
+    animation-delay: 500ms;
     transition-delay: 500ms;
-  }
-
-  .reveal.active .stagger-item:nth-child(6) {
-    transition-delay: 600ms;
   }
 
   @media (prefers-reduced-motion: reduce) {
 
-    .reveal,
-    .reveal .stagger-item {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    .reveal {
       opacity: 1 !important;
       transform: none !important;
       transition: none !important;
