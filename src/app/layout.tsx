@@ -47,7 +47,9 @@ export default function RootLayout({
 				<Nav />
 
 				{/* Main content wrapper to push footer down if needed */}
-				<main className="flex-grow">{children}</main>
+				<main id="main-content" className="flex-grow">
+					{children}
+				</main>
 
 				<RevealOnScroll />
 			</body>
