@@ -6,7 +6,7 @@ settings:
 
 importers:
 
-  kasparro-3:
+  .:
     dependencies:
       '@prisma/client':
         specifier: ^5.7.1

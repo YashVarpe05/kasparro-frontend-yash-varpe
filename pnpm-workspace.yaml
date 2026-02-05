@@ -1,5 +1,5 @@
 packages:
-  - .
+  - kasparro-3
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver
