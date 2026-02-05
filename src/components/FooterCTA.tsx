@@ -105,8 +105,88 @@ export function FooterCTA() {
 				</form>
 			)}
 
-			<div className="mt-20 pb-10 text-xs text-brand-muted font-mono">
-				© Kasparro. Infrastructure for AI Discovery.
+			<div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 text-left border-t border-white/10 pt-10">
+				<div>
+					<h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+						Company
+					</h3>
+					<ul className="space-y-3">
+						<li>
+							<a
+								href="/about"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								About
+							</a>
+						</li>
+						<li>
+							<a
+								href="/contact"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+						Product
+					</h3>
+					<ul className="space-y-3">
+						<li>
+							<a
+								href="/platform"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								Platform
+							</a>
+						</li>
+						<li>
+							<a
+								href="/how-it-works"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								How It Works
+							</a>
+						</li>
+						<li>
+							<a
+								href="/proof"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								Proof
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">
+						Legal
+					</h3>
+					<ul className="space-y-3">
+						<li>
+							<a
+								href="/privacy"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								Privacy Policy
+							</a>
+						</li>
+						<li>
+							<a
+								href="/terms"
+								className="text-base text-brand-muted hover:text-white transition-colors"
+							>
+								Terms of Service
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div className="mt-12 pt-8 border-t border-white/10 text-xs text-brand-muted font-mono">
+				© {new Date().getFullYear()} Kasparro. Infrastructure for AI Discovery.
 			</div>
 		</footer>
 	);
