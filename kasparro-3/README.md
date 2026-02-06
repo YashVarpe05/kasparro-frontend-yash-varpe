@@ -51,13 +51,11 @@ Page Routes (/app/)
 ### Three-Layer System
 
 1. **UI Primitives** (`/components/ui/`)
-
    - Button, Card, Badge, Table, Tabs, etc.
    - Zero business logic
    - shadcn/ui components
 
 2. **Feature Components** (`/components/features/`)
-
    - `MetricCard` - Dashboard metric display with trend indicators
    - `AuditSidebar` - Module list with status/score indicators
    - `ModuleDetails` - Insights, issues, recommendations view
@@ -186,3 +184,5 @@ The architecture is designed so that swapping JSON with real API data requires:
 3. **Zero changes to components**
 
 If you can't swap data sources without changing UI components, the architecture is wrong.
+
+<!-- Trigger Vercel deployment -->
